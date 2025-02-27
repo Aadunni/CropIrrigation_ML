@@ -48,8 +48,10 @@ INTO TABLE irrigation_data
 FIELDS TERMINATED BY ',' 
 ENCLOSED BY '\"'
 LINES TERMINATED BY '\n'
-IGNORE 1 ROWS;
+IGNORE 1 ROWS
+(crop, season, altitude, soil_type, water_requirement_mm_day, irrigation_strategy, total_water_requirement_m3);
 "
+
 
 echo "✅ Data import complete!"
 
